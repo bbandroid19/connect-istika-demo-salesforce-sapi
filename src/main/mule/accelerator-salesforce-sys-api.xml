@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <mule xmlns:doc="http://www.mulesoft.org/schema/mule/documentation" xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:apikit="http://www.mulesoft.org/schema/mule/mule-apikit" xmlns:http="http://www.mulesoft.org/schema/mule/http" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd http://www.mulesoft.org/schema/mule/mule-apikit http://www.mulesoft.org/schema/mule/mule-apikit/current/mule-apikit.xsd ">
-    <apikit:config name="accelerator-salesforce-sys-api-config" api="resource::b0beec90-c6cc-4c36-8f7c-ef1f8f91253b:accelerator-salesforce-sys-api:1.0.0:raml:zip:accelerator-salesforce-sys-api.raml" outboundHeadersMapName="outboundHeaders" httpStatusVarName="httpStatus" />
+    <apikit:config name="accelerator-salesforce-sys-api-config" api="resource::b0beec90-c6cc-4c36-8f7c-ef1f8f91253b:connect-istika-demo-salesforce-sapi:1.0.0:raml:zip:connect-istika-demo-salesforce-sapi.raml" outboundHeadersMapName="outboundHeaders" httpStatusVarName="httpStatus" />
     <flow name="accelerator-salesforce-sys-api-main">
         <http:listener path="/api/*" config-ref="sfdc-sys-api-httpListenerConfig">
             <http:response statusCode="#[vars.httpStatus default 200]">
